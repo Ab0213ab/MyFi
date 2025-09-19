@@ -8,7 +8,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<MyFiDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<MyFiDbContext>();
+builder.Services.AddDefaultIdentity<IdentityUser>(options => 
+options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<MyFiDbContext>();
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
