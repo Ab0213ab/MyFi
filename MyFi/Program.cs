@@ -28,12 +28,32 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
+
+app.MapRazorPages();
+
+app.MapGet("/", async (HttpContext context) =>
+{
+    if (context.User?.Identity?.IsAuthenticated == true)
+    {
+        // Already logged in
+        return Results.Redirect("/Home/Index");
+    }
+    else 
+    {
+        // Needs to login
+        return Results.Redirect("/Identity/Account/Login");
+    }
+});
+
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    await MyFi.Data.Infrastructure.DataSeeders.RoleSeeder.SeedRolesAsync(roleManager);
+}
 
 app.Run();
