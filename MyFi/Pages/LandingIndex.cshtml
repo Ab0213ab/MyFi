@@ -1,0 +1,21 @@
+﻿@page
+@model MyFi.Pages.LandingIndexModel
+@{
+    ViewData["Title"] = "Welcome to MyFi";
+    Layout = "_Layout";
+}
+
+<div class="text-center py-5">
+    <h1 class="display-4">Welcome to MyFi</h1>
+    <p class="lead">Your personal finance companion.</p>
+
+    <p>Features include:</p>
+    <ul class="list-unstyled">
+        <li>✅ Track expenses</li>
+        <li>✅ Visualize budgets</li>
+        <li>✅ Role-based admin access</li>
+    </ul>
+
+    <a class="btn btn-primary btn-lg" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    <a class="btn btn-outline-secondary btn-lg ms-2" asp-area="Identity" asp-page="/Account/Register">Register</a>
+</div>

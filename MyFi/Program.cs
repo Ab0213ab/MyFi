@@ -12,6 +12,17 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<MyFiDbContext>();
+
+// Protect the Admin folder
+//builder.Services.AddAuthorization(o =>
+//{
+//    o.AddPolicy("RequireAdmin", p => p.RequireRole("Admin"));
+//});
+//builder.Services.AddRazorPages(o =>
+//{
+//    o.Conventions.AuthorizeFolder("/Admin", "RequireAdmin");
+//});
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -35,7 +46,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapRazorPages();
 
@@ -45,11 +56,13 @@ app.MapGet("/", async (HttpContext context) =>
     {
         // Already logged in
         return Results.Redirect("/Home/Index");
+        //return Results.Redirect("/Dashboard");
     }
     else 
     {
         // Needs to login
         return Results.Redirect("/Identity/Account/Login");
+        //return Results.Redirect("/LandingIndex");
     }
 });
 
