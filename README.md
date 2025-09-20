@@ -21,7 +21,6 @@ WIP...
 This is a (WIP) personal finance web application built with ASP.NET8. The application demonstrates many advanced
 enterprise development techniques and tools including, but not limited to: 
 <ul>
-	<li>EntityFrameworkCore</li> 
 	<li>EFCore Migrations</li>
 	<li>Identity Core</li>
 	<li>OOP</li> 
@@ -36,6 +35,7 @@ enterprise development techniques and tools including, but not limited to:
 ## Technologies Used
 - ASP.NET8
 - EntityFramework
+- Razor Pages
 - SQLServer/SSMS
 - Identity Core
 - Visual Studio IDE
