@@ -14,14 +14,14 @@ options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<MyFiDbContext>();
 
 // Protect the Admin folder
-//builder.Services.AddAuthorization(o =>
-//{
-//    o.AddPolicy("RequireAdmin", p => p.RequireRole("Admin"));
-//});
-//builder.Services.AddRazorPages(o =>
-//{
-//    o.Conventions.AuthorizeFolder("/Admin", "RequireAdmin");
-//});
+builder.Services.AddAuthorization(o =>
+{
+    o.AddPolicy("RequireAdmin", p => p.RequireRole("Admin"));
+});
+builder.Services.AddRazorPages(o =>
+{
+    o.Conventions.AuthorizeFolder("/Admin", "RequireAdmin");
+});
 
 builder.Services.AddRazorPages();
 
@@ -44,9 +44,10 @@ app.UseAuthorization();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+// No need for defaul controller route right now due to use of razor pages
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapRazorPages();
 
@@ -55,14 +56,14 @@ app.MapGet("/", async (HttpContext context) =>
     if (context.User?.Identity?.IsAuthenticated == true)
     {
         // Already logged in
-        return Results.Redirect("/Home/Index");
-        //return Results.Redirect("/Dashboard");
+        //return Results.Redirect("/Home/Index");
+        return Results.Redirect("/Dashboard");
     }
     else 
     {
         // Needs to login
-        return Results.Redirect("/Identity/Account/Login");
-        //return Results.Redirect("/LandingIndex");
+        //return Results.Redirect("/Identity/Account/Login");
+        return Results.Redirect("/LandingIndex");
     }
 });
 
