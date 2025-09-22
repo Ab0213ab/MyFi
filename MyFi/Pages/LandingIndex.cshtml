@@ -15,7 +15,15 @@
         <li>Visualize budgets</li>
         <li>Role-based admin access</li>
     </ul>
-
-    <a class="btn btn-primary btn-lg" asp-area="Identity" asp-page="/Account/Login">Login</a>
-    <a class="btn btn-outline-secondary btn-lg ms-2" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <a class="btn btn-primary btn-lg" asp-area="" asp-page="/Dashboard">Dashboard</a>
+    } 
+    else
+    {
+        <a class="btn btn-primary btn-lg" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a class="btn btn-outline-secondary btn-lg ms-2" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    } 
 </div>
+
+
