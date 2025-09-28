@@ -1,20 +1,10 @@
 # MyFi
 
 ## Table of Contents
-1. [Functionality Screenshots](#functionality-screenshots)
-2. [Application Description](#application-description)
-3. [Technologies Used](#technologies-used)
+1. [Application Description](#application-description)
+2. [Technologies Used](#technologies-used)
+3. [Functionality Screenshots](#functionality-screenshots)
 4. [Developer Information](#developer-information) 
-
-## Functionality Screenshots
-
-WIP...
-
-<hr>
-
-[Back to Table of Contents](#table-of-contents)
-
-<hr>
 
 ## Application Description
 
@@ -22,7 +12,7 @@ This is a (WIP) personal finance web application built with ASP.NET8. The applic
 enterprise development techniques and tools including, but not limited to: 
 <ul>
 	<li>EFCore Migrations</li>
-	<li>Identity Core</li>
+	<li>UI accessibility via semantic HTML and WCAG-compliant theming</li>
 	<li>OOP</li> 
 	<li>MVC Architecture</li>
   <li>WIP...</li>
@@ -40,6 +30,16 @@ enterprise development techniques and tools including, but not limited to:
 - Identity Core
 - Visual Studio IDE
 - WIP...
+
+[Back to Table of Contents](#table-of-contents)
+
+<hr>
+
+## Functionality Screenshots
+
+WIP...
+
+<hr>
 
 [Back to Table of Contents](#table-of-contents)
 
