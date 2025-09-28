@@ -5,25 +5,52 @@
     Layout = "_Layout";
 }
 
-<div class="text-center py-5">
-    <h1 class="display-4">Welcome to MyFi</h1>
-    <p class="lead">Your personal finance companion.</p>
+<!-- Hero Section -->
+<section class="text-center text-white d-flex flex-column justify-content-center"
+         style="min-height:70vh; background: radial-gradient(110% 80% at 50% 10%, #2c3e50 0%, #1e88e5 60%, #18bc9c 100%);">
+    <div class="container">
+        <h1 class="display-3 fw-semibold">Own your money story.</h1>
+        <p class="lead mb-4">Track. Plan. Progress. MyFi keeps your finances clear and moving forward.</p>
 
-    <p>Features include:</p>
-    <ul class="list-unstyled">
-        <li>Track expenses</li>
-        <li>Visualize budgets</li>
-        <li>Role-based admin access</li>
-    </ul>
-    @if (User.Identity?.IsAuthenticated == true)
-    {
-        <a class="btn btn-primary btn-lg" asp-area="" asp-page="/Dashboard">Dashboard</a>
-    } 
-    else
-    {
-        <a class="btn btn-primary btn-lg" asp-area="Identity" asp-page="/Account/Login">Login</a>
-        <a class="btn btn-outline-secondary btn-lg ms-2" asp-area="Identity" asp-page="/Account/Register">Register</a>
-    } 
-</div>
+        @if (User.Identity?.IsAuthenticated == true)
+        {
+            <a class="btn btn-light btn-lg px-4" asp-area="" asp-page="/Dashboard">Go to Dashboard</a>
+        }
+        else
+        {
+            <a class="btn btn-primary btn-lg px-4" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            <a class="btn btn-outline-light btn-lg px-4 ms-2" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        }
+    </div>
+</section>
 
-
+<!-- Features Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Why MyFi?</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Clarity</h5>
+                    <p class="card-text">A single dashboard for spending, savings, and goals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Progress</h5>
+                    <p class="card-text">Charts that show momentum and celebrate your milestones.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">Security</h5>
+                    <p class="card-text">Built with modern authentication and role-based access.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
