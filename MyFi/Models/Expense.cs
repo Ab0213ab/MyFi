@@ -10,6 +10,12 @@ namespace MyFi.Models
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; } = default!;
+
+        [ForeignKey("Category")]
+        public int CategoryId { get; set; }
+        public Category Category { get; set; } = null!;
+
+
     }
 
 }

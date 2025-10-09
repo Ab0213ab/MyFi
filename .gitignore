@@ -361,3 +361,29 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+
+# --- MyFi Custom Additions ---
+
+# User secrets and environment configs
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# EF Core migration build artifacts
+*Migrations/obj/
+*Migrations/bin/
+
+# SQLite / LocalDB databases (if testing locally)
+*.db
+*.db-shm
+*.db-wal
+
+# ChatGPT API key files or configs
+openai_settings.json
+*.key
+*.env
+
+# Logs
+logs/
+*.log
