@@ -15,7 +15,7 @@ enterprise development techniques and tools including, but not limited to:
 	<li>UI accessibility via semantic HTML and WCAG-compliant theming</li>
 	<li>OOP</li> 
 	<li>MVC Architecture</li>
-  <li>WIP...</li>
+  <li>[(WIP)](https://github.com/users/Ab0213ab/projects/1)...</li> 
 </ul>
 
 [Back to Table of Contents](#table-of-contents)
@@ -29,7 +29,7 @@ enterprise development techniques and tools including, but not limited to:
 - SQLServer/SSMS
 - Identity Core
 - Visual Studio IDE
-- WIP...
+- [(WIP)](https://github.com/users/Ab0213ab/projects/1)...
 
 [Back to Table of Contents](#table-of-contents)
 
