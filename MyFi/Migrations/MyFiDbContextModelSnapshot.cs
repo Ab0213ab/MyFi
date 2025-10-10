@@ -268,8 +268,6 @@ namespace MyFi.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
-
                     b.ToTable("Expenses");
                 });
 
@@ -322,22 +320,6 @@ namespace MyFi.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("MyFi.Models.Expense", b =>
-                {
-                    b.HasOne("MyFi.Models.Category", "Category")
-                        .WithMany("Expenses")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("MyFi.Models.Category", b =>
-                {
-                    b.Navigation("Expenses");
                 });
 #pragma warning restore 612, 618
         }
