@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyFi.Models;
+using System.Security.Claims;
 
 namespace MyFi.Pages.Budgets
 {
@@ -16,7 +17,10 @@ namespace MyFi.Pages.Budgets
 
         public void OnGet()
         {
-            Budgets = _context.Budgets.ToList();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            Budgets = _context.Budgets
+                      .Where(b => b.UserId == userId)
+                      .ToList();
         }
 
         public int GetExpenseCount(int budgetId)
