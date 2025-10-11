@@ -13,6 +13,9 @@ namespace MyFi.Models
 
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
+
+        [ForeignKey("Budget")]
+        public int BudgetId { get; set; }
     }
 
 }
