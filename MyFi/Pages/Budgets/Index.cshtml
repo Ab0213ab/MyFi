@@ -1,0 +1,45 @@
+﻿@page
+@model MyFi.Pages.Budgets.IndexModel
+@{
+    ViewData["Title"] = "Budgets";
+    Layout = "_Layout";
+}
+
+<div class="container py-4">
+    <h2 class="mb-4">Budgets</h2>
+
+    @if (!Model.Budgets.Any())
+    {
+        <div class="text-center py-5 border rounded bg-light">
+            <p class="lead mb-3">You haven’t created any budgets yet.</p>
+            <a class="btn btn-primary" asp-page="Create">
+                + Create Budget
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="row g-3">
+            @foreach (var budget in Model.Budgets)
+            {
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">@budget.Name</h5>
+                            <p class="card-text small mb-2">
+                                Total: @budget.TotalAmount.ToString("C")
+                            </p>
+                            <p class="card-text small text-muted mb-3">
+                                Expenses: @Model.GetExpenseCount(budget.Id)
+                            </p>
+                            <a class="btn btn-outline-primary btn-sm"
+                               asp-page="Details" asp-route-id="@budget.Id">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
