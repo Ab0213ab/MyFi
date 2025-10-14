@@ -12,7 +12,7 @@ This is a (WIP) personal finance web application built with ASP.NET8. The applic
 enterprise development techniques and tools including, but not limited to: 
 <ul>
 	<li>EFCore Migrations</li>
-	<li>UI accessibility via semantic HTML and WCAG-compliant theming</li>
+	<li>UI accessibility via semantic HTML5 tags and WCAG-compliant theming</li>
 	<li>OOP</li> 
 	<li>MVC Architecture</li>
   <li>WIP...</li> 
