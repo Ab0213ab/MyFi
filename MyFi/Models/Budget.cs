@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyFi.Models
 {
@@ -11,6 +12,7 @@ namespace MyFi.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalAmount { get; set; }
 
+        [BindNever]
         public string UserId { get; set; } = default!;
     }
 }
