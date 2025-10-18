@@ -12,9 +12,16 @@
     {
         <div class="text-center py-5 border rounded bg-light">
             <p class="lead mb-3">You haven’t created any budgets yet.</p>
-            <a class="btn btn-primary" asp-page="Create">
-                + Create Budget
-            </a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    + Create
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" asp-page="Create">New Blank Budget</a></li>
+                    <li><a class="dropdown-item" asp-page="CreateFromTemplate">From Template</a></li>
+                </ul>
+            </div>
+
         </div>
     }
     else
