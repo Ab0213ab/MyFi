@@ -12,7 +12,7 @@
 
 ---
 
-## 📘 Table of Contents
+## Table of Contents
 1. [Application Description](#application-description)
 2. [Technologies Used](#technologies-used)
 3. [Architecture & Advanced Concepts](#architecture--advanced-concepts)
@@ -21,14 +21,14 @@
 
 ---
 
-## 💡 Application-Description
+## Application Description
 
 **MyFi** is a **modern, in-progress personal finance web application** designed to demonstrate enterprise-grade ASP.NET development principles.  
 It’s built as a real-world showcase of software engineering skills like authentication and data management, cloud-readiness, and AI integration.  
 
 ---
 
-### ✨ Features (WIP)
+### Features (WIP)
 - **User Authentication & Roles:** ASP.NET Identity (Admin/User)
 - **Budgeting System:** Create, categorize, and track budgets and expenses
 - **AI Assistant (Planned):** OpenAI-powered financial insights and goal tracking
@@ -36,11 +36,11 @@ It’s built as a real-world showcase of software engineering skills like authen
 - **Error Handling & Logging:** Structured logging (Serilog) and custom error pages
 - **Gamification (Planned):** Badges, progress tracking, and savings challenges
 
-[🔼 Back to Table of Contents](#table-of-contents)
+[Back to Table of Contents](#table-of-contents)
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 | Category | Technologies |
 |-----------|---------------|
@@ -51,9 +51,11 @@ It’s built as a real-world showcase of software engineering skills like authen
 | **Logging & Monitoring** | Serilog (Planned), ILogger<T> |
 | **AI Integration (Upcoming)** | OpenAI API via ASP.NET Service Layer |
 
+[Back to Table of Contents](#table-of-contents)
+
 ---
 
-## 🧱 Architecture & Advanced Concepts
+## Architecture & Advanced Concepts
 
 MyFi uses a layered architecture centered around **clarity, maintainability, and scalability**.  
 Key patterns and techniques include:
@@ -67,21 +69,23 @@ Key patterns and techniques include:
 - **Cloud Readiness (Planned):** Azure deployment pipeline via CI/CD  
 - **OpenAI Integration (Planned):** Personalized budgeting insights via LLMs  
 
-[🔼 Back to Table of Contents](#table-of-contents)
+[Back to Table of Contents](#table-of-contents)
 
 ---
 
-## 📸 Functionality Screenshots
+## Functionality Screenshots
 *(Coming Soon)*  
 
 Stay tuned for visuals of:
 - The authenticated **Dashboard** with sidebar navigation  
 - The **Budgets module** showing dynamic empty-state vs. populated layouts  
-- The custom **Error Page** and logging workflow  
+- The custom **Error Page** and logging workflow
+
+[Back to Table of Contents](#table-of-contents)
 
 ---
 
-## 👨‍💻 Developer Information
+## Developer Information
 
 Built and maintained by **Andrew B. Schaefer**  
 - GitHub: [Ab0213ab](https://github.com/Ab0213ab)  
@@ -92,5 +96,5 @@ Built and maintained by **Andrew B. Schaefer**
 
 *“MyFi: Where Personal Finance Meets AI”*
 
-[🔼 Back to Table of Contents](#table-of-contents)
+[Back to Table of Contents](#table-of-contents)
 
