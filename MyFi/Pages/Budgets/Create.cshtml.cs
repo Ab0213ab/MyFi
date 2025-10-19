@@ -26,12 +26,13 @@ namespace MyFi.Pages.Budgets
 
             var user = await _userManager.GetUserAsync(User);
             Budget.UserId = user?.Id ?? string.Empty;
+
+            // Clear the old model-state entry to validate
+            // model state with the correct value
             ModelState.Remove("Budget.UserId");
-            // Add this back in after we figure it out
             if (!ModelState.IsValid)
                 return Page();
 
-           
             _context.Budgets.Add(Budget);
             await _context.SaveChangesAsync();
 

@@ -70,7 +70,7 @@ app.MapGet("/", async (HttpContext context) =>
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    await MyFi.Data.Infrastructure.DataSeeders.RoleSeeder.SeedRolesAsync(roleManager);
+    MyFi.Data.Infrastructure.DataSeeders.RoleSeeder.SeedRolesAsync(roleManager).GetAwaiter().GetResult();
 }
 
 app.Run();

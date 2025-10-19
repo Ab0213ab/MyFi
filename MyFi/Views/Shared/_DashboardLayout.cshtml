@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse" aria-label="Sidebar">
+            <div class="position-sticky pt-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewData["Title"] as string == "Dashboard" ? "active" : "")"
+                           asp-page="/Dashboard">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewData["Title"] as string == "Budgets" ? "active" : "")"
+                           asp-page="/Budgets/Index">Budgets...</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewData["Title"] as string == "Transactions" ? "active" : "")"
+                           asp-page="/Transactions/Index">Transactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewData["Title"] as string == "Goals" ? "active" : "")"
+                           asp-page="/Goals/Index">Goals</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main dashboard content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            @RenderBody()
+        </main>
+    </div>
+</div>

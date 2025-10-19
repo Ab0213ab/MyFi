@@ -2,63 +2,41 @@
 @model MyFi.Pages.DashboardModel
 @{
     ViewData["Title"] = "Dashboard";
-    Layout = "_Layout";
+    Layout = "_DashboardLayout";
 }
-
-<div class="container-fluid">
-    <div class="row">
-        <!-- Sidebar -->
-        <nav class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse" aria-label="Sidebar">
-            <div class="position-sticky pt-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a class="nav-link active" href="#">Overview</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-page="/Budgets/Index">Budgets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Transactions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Goals</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Main content -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-
-            @* TODO: Eventually this will need to just be @RenderBody()*@
-            <div class="d-flex justify-content-between flex-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">Overview</h1>
-            </div>
-
-            <div class="row g-3">
-                <div class="col-lg-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h6 class="card-title mb-2">Monthly Spend</h6>
-                            <div class="ratio ratio-16x9"><canvas id="chart-spend"></canvas></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h6 class="card-title mb-2">Savings Progress</h6>
-                            <p class="display-6 text-success mb-0">72%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h6 class="card-title mb-2">Upcoming Bills</h6>
-                            <ul class="list-unstyled mb-0 small">
-                                <li>Mortgage — Fri</li>
-                                <li>Utilities — 3 days</li>
-                                <li>Card Payment — 6 days</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </main>
+    <div class="d-flex justify-content-between flex-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Overview</h1>
     </div>
-</div>
+
+    <div class="row g-3">
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title mb-2">Monthly Spend</h6>
+                    <div class="ratio ratio-16x9"><canvas id="chart-spend"></canvas></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title mb-2">Savings Progress</h6>
+                    <p class="display-6 text-success mb-0">72%</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title mb-2">Upcoming Bills</h6>
+                    <ul class="list-unstyled mb-0 small">
+                        <li>Mortgage — Fri</li>
+                        <li>Utilities — 3 days</li>
+                        <li>Card Payment — 6 days</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
