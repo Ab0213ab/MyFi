@@ -26,11 +26,6 @@
 **MyFi** is a **modern, in-progress personal finance web application** designed to demonstrate enterprise-grade ASP.NET development principles.  
 It’s built as a real-world showcase of software engineering skills like authentication and data management, cloud-readiness, and AI integration.  
 
-Core goals include:
-- Robust backend design using **Entity Framework Core**, **Identity**, and **SQL Server**  
-- Secure, accessible, and responsive UI via **Razor Pages** and **Bootswatch Lux**
-- Emphasis on **clean architecture**, **logging**, and **observability**
-
 ---
 
 ### ✨ Features (WIP)
