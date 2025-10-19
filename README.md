@@ -21,7 +21,7 @@
 
 ---
 
-## 💡 Application Description
+## 💡 Application-Description
 
 **MyFi** is a **modern, in-progress personal finance web application** designed to demonstrate enterprise-grade ASP.NET development principles.  
 It’s built as a real-world showcase of software engineering skills like authentication and data management, cloud-readiness, and AI integration.  
