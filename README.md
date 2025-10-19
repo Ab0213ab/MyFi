@@ -90,7 +90,7 @@ Built and maintained by **Andrew B. Schaefer**
 
 ---
 
-*“MyFi: Own Your Money Story”*
+*“MyFi: Where Personal Finance Meets AI”*
 
 [🔼 Back to Table of Contents](#table-of-contents)
 
