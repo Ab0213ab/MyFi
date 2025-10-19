@@ -1,4 +1,4 @@
-# 💰 MyFi — Modern Personal Finance Web Application
+# 💰 MyFi: A Modern ASP.NET Web Application Where Personal Finance Meets AI
 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-5C2D91?style=for-the-badge&logo=dotnet&logoColor=white)
@@ -89,6 +89,8 @@ Built and maintained by **Andrew B. Schaefer**
 - Email: [Abs233abs@gmail.com](mailto:Abs233abs@gmail.com)
 
 ---
+
+*“MyFi: Own Your Money Story”*
 
 [🔼 Back to Table of Contents](#table-of-contents)
 
