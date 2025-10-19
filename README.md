@@ -1,72 +1,3 @@
-# MyFi
-
-## Table of Contents
-1. [Application Description](#application-description)
-2. [Technologies Used](#technologies-used)
-3. [Functionality Screenshots](#functionality-screenshots)
-4. [Developer Information](#developer-information) 
-
-## Application Description
-
-This is a (WIP) personal finance web application built with ASP.NET8. The application demonstrates many advanced
-enterprise development techniques and tools including, but not limited to: 
-<ul>
-	<li>EFCore Migrations</li>
-	<li>UI accessibility via semantic HTML5 tags and WCAG-compliant theming</li>
-	<li>OOP</li> 
-	<li>MVC Architecture</li>
-  <li>WIP...</li> 
-</ul>
-
-[Back to Table of Contents](#table-of-contents)
-
-<hr>
-
-## Technologies Used
-- ASP.NET8
-- EntityFramework
-- Razor Pages
-- SQLServer/SSMS
-- Identity Core
-- Visual Studio IDE
-- WIP...
-
-[Back to Table of Contents](#table-of-contents)
-
-<hr>
-
-## Functionality Screenshots
-
-WIP...
-
-<hr>
-
-[Back to Table of Contents](#table-of-contents)
-
-<hr>
-
-## Developer Information
-Built by Andrew B. Schaefer [(Ab0213ab)](https://github.com/Ab0213ab).
-
-LinkedIn: https://www.linkedin.com/in/andrewbschaefer/
-
-Email: Abs233abs@gmail.com 
-
-[Back to Table of Contents](#table-of-contents)
-
-<hr>
-
-
-
-
-
-
-
-
-
-
-
-
 # 💰 MyFi — Modern Personal Finance Web Application
 
 ![.NET](https://img.shields.io/badge/.NET%208.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
@@ -89,7 +20,7 @@ Email: Abs233abs@gmail.com
 ## 💡 Application Description
 
 **MyFi** is a **modern, in-progress personal finance web application** designed to demonstrate enterprise-grade ASP.NET development principles.  
-It’s built as a real-world showcase of software engineering skills — from authentication and data management to cloud-readiness and AI integration.  
+It’s built as a real-world showcase of software engineering skills like authentication and data management, cloud-readiness, and AI integration.  
 
 Core goals include:
 - Robust backend design using **Entity Framework Core**, **Identity**, and **SQL Server**  
@@ -128,21 +59,21 @@ Core goals include:
 MyFi uses a layered architecture centered around **clarity, maintainability, and scalability**.  
 Key patterns and techniques include:
 
-- 🧩 **Razor Pages + Minimal API Routing:** Hybrid pattern for flexible navigation  
-- 💾 **Entity Framework Core Migrations:** Code-first schema evolution  
-- 🧠 **OOP Design Principles:** Encapsulation, dependency injection, and separation of concerns  
-- 🔒 **Identity Authorization Policies:** Folder-based admin role protection  
-- ♿ **Accessibility First:** Semantic HTML, ARIA attributes, WCAG color contrast compliance  
-- 🧭 **Logging + Exception Handling (Next Phase):** Global middleware pipeline with structured logs  
-- ☁️ **Cloud Readiness (Planned):** Azure deployment pipeline via CI/CD  
-- 🤖 **OpenAI Integration (Planned):** Personalized budgeting insights via LLMs  
+- **Razor Pages + Minimal API Routing:** Hybrid pattern for flexible navigation  
+- **Entity Framework Core Migrations:** Code-first schema evolution  
+- **OOP Design Principles:** Encapsulation, dependency injection, and separation of concerns  
+- **Identity Authorization Policies:** Folder-based admin role protection  
+- **Accessibility First:** Semantic HTML, ARIA attributes, WCAG color contrast compliance  
+- **Logging + Exception Handling (Next Phase):** Global middleware pipeline with structured logs  
+- **Cloud Readiness (Planned):** Azure deployment pipeline via CI/CD  
+- **OpenAI Integration (Planned):** Personalized budgeting insights via LLMs  
 
 [🔼 Back to Table of Contents](#table-of-contents)
 
 ---
 
 ## 📸 Functionality Screenshots
-*(Coming Soon — Dashboard, Budgets Page, and Error Handling Preview)*  
+*(Coming Soon)*  
 
 Stay tuned for visuals of:
 - The authenticated **Dashboard** with sidebar navigation  
@@ -159,8 +90,6 @@ Built and maintained by **Andrew B. Schaefer**
 - Email: [Abs233abs@gmail.com](mailto:Abs233abs@gmail.com)
 
 ---
-
-⭐ *“MyFi is designed not just to demonstrate features — but to showcase clean, production-level .NET craftsmanship.”*
 
 [🔼 Back to Table of Contents](#table-of-contents)
 
