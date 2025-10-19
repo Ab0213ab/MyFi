@@ -1,4 +1,4 @@
-# 💰 MyFi: A Modern ASP.NET Web Application Where Personal Finance Meets AI
+# 💰 MyFi: Where Personal Finance Meets AI
 
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-5C2D91?style=for-the-badge&logo=dotnet&logoColor=white)
