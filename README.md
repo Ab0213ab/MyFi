@@ -48,7 +48,7 @@ It’s built as a real-world showcase of software engineering skills like authen
 | **Backend** | ASP.NET Core 8, C#, Entity Framework Core 9, LINQ, Identity Core |
 | **Database** | SQL Server, SSMS, EF Core Migrations |
 | **DevOps & Tools** | Visual Studio 2022, GitHub, Azure DevOps Pipelines (Planned) |
-| **Logging & Monitoring** | Serilog (Planned), ILogger<T> |
+| **Logging & Monitoring** | Serilog, ILogger<T> |
 | **AI Integration (Upcoming)** | OpenAI API via ASP.NET Service Layer |
 
 [Back to Table of Contents](#table-of-contents)
@@ -65,7 +65,7 @@ Key patterns and techniques include:
 - **OOP Design Principles:** Encapsulation, dependency injection, and separation of concerns  
 - **Identity Authorization Policies:** Folder-based admin role protection  
 - **Accessibility First:** Semantic HTML, ARIA attributes, WCAG color contrast compliance  
-- **Logging + Exception Handling (Next Phase):** Global middleware pipeline with structured logs  
+- **Logging + Exception Handling:** Global middleware pipeline with structured logs  
 - **Cloud Readiness (Planned):** Azure deployment pipeline via CI/CD  
 - **OpenAI Integration (Planned):** Personalized budgeting insights via LLMs  
 
@@ -74,12 +74,7 @@ Key patterns and techniques include:
 ---
 
 ## Functionality Screenshots
-*(Coming Soon)*  
-
-Stay tuned for visuals of:
-- The authenticated **Dashboard** with sidebar navigation  
-- The **Budgets module** showing dynamic empty-state vs. populated layouts  
-- The custom **Error Page** and logging workflow
+*(Coming Soon)*
 
 [Back to Table of Contents](#table-of-contents)
 
