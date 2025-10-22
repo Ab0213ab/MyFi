@@ -1,7 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Serilog set up
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/myfi-.log", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+builder.Host.UseSerilog();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -56,13 +66,11 @@ app.MapGet("/", async (HttpContext context) =>
     if (context.User?.Identity?.IsAuthenticated == true)
     {
         // Already logged in
-        //return Results.Redirect("/Home/Index");
         return Results.Redirect("/Dashboard");
     }
     else 
     {
         // Needs to login
-        //return Results.Redirect("/Identity/Account/Login");
         return Results.Redirect("/LandingIndex");
     }
 });
@@ -74,3 +82,5 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+
+Log.CloseAndFlush();
